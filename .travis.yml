@@ -30,8 +30,7 @@ jobs:
       deploy:
         provider: pypi
         username: __token__
-        password:
-          secure: ENCRYPTED_TOKEN_PLACEHOLDER
+        password: $PYPI_TOKEN
         distributions: "sdist bdist_wheel"
         skip_cleanup: true
         skip_existing: true
